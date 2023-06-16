@@ -9,9 +9,9 @@ import pandas as pd
 
 #open ai api key
 #for github
-# openai.api_key=st.secrets["OPENAI_API_KEY"]
+openai.api_key=st.secrets["OPENAI_API_KEY"]
 #for local
-openai.api_key=os.getenv("OPENAI_API_KEY")
+# openai.api_key=os.getenv("OPENAI_API_KEY")
 
 messages=[{"role":"user","content":"you are content creator"}]
 def customchatgpt(user_input):
